@@ -1,3 +1,4 @@
+								-- SEMANA 27/07 --
 -- concatenaFold 
 concatenaFold [] = []
 concatenaFold xs = foldr (++) [] xs
@@ -32,6 +33,9 @@ acertosFold xs ys = foldr f v [0..tam-1]
 -- descompactaFold
 descompactaFold xs = foldr (\(a,b) (xs,ys) -> (a:xs,b:ys) ) ([],[]) xs
 
+
+
+								-- SEMANA 05/08 --
 --KOLAKOSKI
 kolakoski = 1 : 2 : 2 : concat [ replicate z y | (y,z) <- zip l1 l2  ]
     where
@@ -87,46 +91,15 @@ divisores n = filter (\x -> mod n x == 0) [1..n]
 
 primosGemeos = [(a,b) | i <- [0..], ((primos!!(i+1))-(primos!!i)) == 2, (a,b)<-[((primos!!i),(primos!!(i+1)))]]
 
+
+								-- SEMANA 12/08 --
 -- arvoreExpressao
 
 --LinkedList
-data LinkedList a = Vazia | No1 a (LinkedList a) deriving (Eq, Show)
-
-fromList :: [a] -> LinkedList a
-fromList [] = Vazia
-fromList (x:xs) = No1 x (fromList xs)
-
-toList :: LinkedList a -> [a]
-toList Vazia = []
-toList (No1 x (xs)) = (x:toList xs)
-
-append :: a -> LinkedList a -> LinkedList a
-append x xs = fromList((toList xs) ++ [x])
-
-reverseLinkedList :: LinkedList a -> LinkedList a
-reverseLinkedList l = fromList (reverse(toList l))
 
 -- mobile
-data Mobile = Pendente Int | Barra Mobile Mobile deriving (Eq, Show)
-
-balanceado :: Mobile -> Bool
-balanceado (Pendente x) = True
-balanceado (Barra (Pendente x) xs) = if x == (peso xs) then True else False
-balanceado (Barra xs ys) = if (balanceado xs)&&(balanceado ys) then True else False
-balanceado (Barra xs (Pendente x)) = if (peso xs) == x then True else False
-
-peso :: Mobile -> Int
-peso (Pendente x) = x
-peso (Barra (Pendente x) xs) = (x+(peso xs))
-peso (Barra xs ys) = (peso xs)+(peso ys)
-peso (Barra xs (Pendente x)) = (x+(peso xs))
 
 -- makeMobile
-data Mobile = Pendente Int | Barra Mobile Mobile deriving (Eq, Show)
-
-makeMobile :: [Int] -> Mobile
-makeMobile [x] = (Pendente x)
-makeMobile xs = (Barra (makeMobile (take ((div (length xs) 2)) xs)) (makeMobile (drop (div (length xs) 2) xs)))
 
 --eqsplits
 splits :: [a] -> [([a],[a])]
@@ -154,6 +127,9 @@ numPassageiros (Vagao (SemCarga) xs) = (numPassageiros(xs))
 numPassageiros (Vagao (Mercadoria x) xs) = (numPassageiros(xs))
 numPassageiros (Vagao (Passageiro x) xs) = x+(numPassageiros(xs))
 
+
+								-- SEMANA 19/08 --
+								
 -- [Tipo Multiconjunto][Extra]remove
 data MConj a = Vazia | No a Int (MConj a) (MConj a) deriving Show 
 
@@ -286,6 +262,8 @@ deleteL a n ((b,c):xs) |a == b && n >= c = xs
  
 delete a n (MultiSet xs) = MultiSet (deleteL a n xs)
 
+
+								-- SEMANA 14/09 --
 -- [Classes de Tipos]NumerosComplexos
 import Text.Printf
 data Complex = Complex { real :: Float
