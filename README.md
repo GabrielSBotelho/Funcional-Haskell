@@ -3,7 +3,14 @@
 Repositório da disciplina de Programação Funcional utilizando a linguagem Haskell.
 
 # Arcade
-- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Quest%C3%B5es/arcade.hs"></a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/soma.hs">Soma</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/miolo.hs">Miolo</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/equal3.hs">Equal3</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/maiorDeTres.hs">Maior de Três</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/somaImpares.hs">Soma Ímpares</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/idImpares.hs">Id Ímpares</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/final.hs">Final</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/gangorra.hs">Gangorra</a>
 
 # Lista 01
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Quest%C3%B5es/lista01.hs">Lista 01</a>
