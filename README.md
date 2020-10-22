@@ -1,5 +1,5 @@
 # Funcional-Haskell
-## Repositório da disciplina de Programação Funcional utilizando a linguagem Haskell.
+<h4>Repositório da disciplina de Programação Funcional utilizando a linguagem Haskell.</h4>
 
 # Arcade
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/soma.hs">Soma</a>
