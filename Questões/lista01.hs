@@ -136,7 +136,54 @@ isSorted(x:xs) |x < head xs = isSorted xs
                |otherwise = False
 
 --Q26)
+quick [] = []
+quick (x:xs) = a ++ [x] ++ b
+    where a = quick [n |n <- xs, n <= x]
+          b = quick [n |n <- xs, n > x]
 
+merge :: (Ord a) => [a] -> [a] -> [a]
+merge [] [] = []
+merge xs [] = xs
+merge [] ys = ys
+merge (x:xs) (y:ys) 
+    | x < y = x:( merge xs (y:ys) )
+    | otherwise = y:( merge (x:xs) ys )
+
+mergesort :: (Ord a) => [a] -> [a]
+mergesort [] = []
+mergesort (x:[]) = [x]
+mergesort xs = merge a b
+    where n = div (length xs) 2
+          a = mergesort $ take n xs
+          b = mergesort $ drop n xs    
+
+bubblesort'iter :: (Ord a) => [a] -> [a]
+bubblesort'iter (x:y:xs)
+    | x > y = y : bubblesort'iter (x:xs)
+    | otherwise = x : bubblesort'iter (y:xs)
+bubblesort'iter (x) = (x)
+
+bubblesort' :: (Ord a) => [a] -> Int -> [a]
+bubblesort' xs i 
+    | i == (length xs) = xs
+    | otherwise = bubblesort' (bubblesort'iter xs) (i + 1) 
+ 
+bubblesort :: (Ord a) => [a] -> [a]
+bubblesort xs = bubblesort' xs 0     
+
+--questão 27
+rotateEsq [] _ = []
+rotateEsq x 0 = x
+rotateEsq x y
+    | y > 0 = rotateEsq (tail x ++ [head x]) (y-1)
+    | otherwise = error "Erro"
+
+--questão 28
+rotateDir [] _ = []
+rotateDir x 0 = x
+rotateDir x y
+    | y > 0 = rotateDir ([last x] ++ init x) (y-1)
+    | otherwise = error "Erro"    
 
 -- Q31)
 selecao [] _ = []
