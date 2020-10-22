@@ -12,7 +12,7 @@ Repositório da disciplina de Programação Funcional utilizando a linguagem Has
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/final.hs">Final</a>
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/gangorra.hs">Gangorra</a>
 
-# Lista 01
+# Lista 01 - Ricardo
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Quest%C3%B5es/lista01.hs">Lista 01</a>
 
 # Atividades Moodle Davi
