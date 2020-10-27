@@ -10,7 +10,7 @@ Aluno: Gabriel de Sousa Botelho - 403346
 	- As atividades dessa reta final foram feitas em conjunto com uma colega da disciplina, Kassiane. 
 	- Não fizemos todas as questões juntas, mas a maioria nos ajudamos para melhor entendimento e execução.
 	- Além disso, recorri a alguns colegas que já fizeram a disciplina para sanar algumas dúvidas.
-
+	<br>
 	* Dificuldades:
 
 	- A maior dificuldade que enfrentei foi relembrar o conteúdo visto em março, pois ele tinha sido a base da disciplina. Ou seja, tive que 
