@@ -2,7 +2,7 @@
 <h4>Repositório da disciplina de Programação Funcional utilizando a linguagem Haskell.</h4>
 
 # Relatório das Atividade Realizadas
-- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Relatorio.pdf">Relatório</a>
+- <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/relatorio.md">Relatório</a>
 
 # Arcade
 - <a href="https://github.com/GabrielSBotelho/Funcional-Haskell/blob/main/Arcade/soma.hs">Soma</a>
