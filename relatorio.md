@@ -1,4 +1,4 @@
-Programação Funcional
+Programação Funcional <br>
 Aluno: Gabriel de Sousa Botelho - 403346
 
 1. Realização das Atividades
@@ -23,4 +23,5 @@ Aluno: Gabriel de Sousa Botelho - 403346
 
 2. Considerações Finais
 
-	- A disciplina compriu com o plano e deu as ferramentas necessárias para o aprendizado do conteúdo.
+	- A disciplina cumpriu com o plano e deu as ferramentas necessárias para o aprendizado do conteúdo.
+ 
